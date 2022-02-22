@@ -1,0 +1,45 @@
+	import java.util.Scanner;
+
+class JavaLibs5026211093 {
+    private static int i;
+
+public static void main(String[] args) { 
+        int age;
+        double height;
+        double res;
+	double distance;
+	double dis;
+
+        Scanner scan = new Scanner(System.in);
+	System.out.println("Your name:");
+        String name = scan.nextLine();
+        System.out.println("Gender:");
+        String gender = scan.nextLine();
+        System.out.println("Age:");
+        age = scan.nextInt();
+	System.out.println("Height in cm:");
+        height = scan.nextDouble();
+	System.out.println("where do you live:");
+        String address = scan.nextLine();
+	System.out.println("where do you study:");
+        String study = scan.nextLine();
+	System.out.println("what course did you take :");
+        String major = scan.nextLine();
+        System.out.println("Distance from place to study in m:");
+        distance = scan.nextDouble();
+	System.out.println("your hobby:");
+        String hobby = scan.nextLine();
+	System.out.println("why do you like that hobby:");
+        String reason = scan.nextLine();
+	System.out.println("Plan for the future:");
+        String plan = scan.nextLine();
+	
+	
+        res=height*0.393701;
+	dis=distance/1000;
+        System.out.println("Hello my name " + (name) + " I'm " + (age) + " years old " + (gender) + " with height " + (height) + " cm/" + ( res) + " inches."
+	+ " I am live at " + (address) + ", currently I am studying " + (major) + " major in " + (study) + " which is about " + (distance) + " m/" + (dis) + " km from where I live."
+	+ "My hobby is " + (hobby) + " because in my opinion " + (reason) + " in the future i hope " + (plan));   
+    }
+}
+	
